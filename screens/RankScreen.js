@@ -17,8 +17,9 @@ for(let i = 0; i < 6 ; i++){
     top.push(newPerson);
 }
 
-top = top.sort();
-top = top.reverse();
+top.sort(function(a, b){
+    return b.points - a.points
+});
 
 class RankScreen extends React.Component {
 
